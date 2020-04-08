@@ -1,0 +1,316 @@
+/* Color Palette
+dark gray: #212529
+green: #3DBA91
+light gray: #BCBEC0
+extra light gray: #F3F3F5
+*/
+
+/* Global styles
+_______________________________________ */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: #343434;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+img {
+  width: 300px;
+}
+a {
+  color: #3DBA91;
+}
+a:hover {
+  text-decoration: none;
+}
+h1 {
+  font-size: 75px;
+  line-height: 1;
+  color: #3DBA91;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+h1, h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+.content-wrap {
+  max-width: 850px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+h3 {
+  margin-bottom: 0;
+}
+.item-details h3 + p {
+  font-style: italic;
+}
+.item-details h3 ~ p {
+  margin: 0;
+}
+
+
+/* NAV
+_______________________________________ */
+.main-nav {
+ display: flex;
+ margin: 0px;
+ padding: 50px;
+ list-style: none;
+        }
+
+.main-nav li {
+	padding: .5em 1em;
+	font: normal 16px sans-serif;
+	color: #212529;
+	position: relative;
+	background: white;
+	cursor: point;
+}
+
+.push {
+ margin-left: auto;
+}
+
+nav ul li:hover {
+color: #3DBA91
+  }
+
+.left li {
+	font: bold 18px san-serif;
+}
+
+.hire {
+  background: #3DBA91;	
+}
+
+.hire:hover {
+ color: white; 
+ background: #30916E;		
+}
+
+/* ABOUT HEADER
+_______________________________________ */
+	
+header {
+  background-color: #212529;
+  color: #CCC;
+}
+header p {
+  font-size: 20px;
+}
+
+/* PROJECTS / PORTFOLIO
+_______________________________________ */
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.project-head {
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+
+/* CONTACT FORM
+_______________________________________ */
+.form {
+  background: #CCC;
+}
+
+.contact-form {
+	line-height: 1.4;
+	max-width: 850px;
+	width: 85%;
+	margin: 0 auto;
+	padding: 60px 0;
+}
+.form-head {
+	text-align: center;
+	margin-bottom: 100px;
+}
+.form-group {
+	background: #CCC;
+	margin: 1em auto;
+	padding: 20px;
+}
+.form-group ul {
+	list-style: none;
+	margin: 0 0 2em;
+	padding: 0;
+}
+.form-group li {
+	margin-bottom: 0.5em;
+}
+
+.form-fields input[type="text"],
+.form-fields input[type="tel"],
+.form-fields input[type="url"],
+.form-fields input[type="email"],
+.form-fields input[type="number"],
+.form-fields select {
+  box-sizing: border-box;
+  padding: 0.6em 0.8em;
+  color: #999;
+  background: #f7f7f7;
+  border: 1px solid #e1e1e1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.9em;
+  text-decoration: none;
+  line-height: normal;
+  max-height: 3em;
+}
+.form-fields input[type="text"]:focus,
+.form-fields input[type="tel"]:focus,
+.form-fields input[type="url"]:focus,
+.form-fields input[type="email"]:focus,
+.form-fields input[type="number"]:focus,
+.form-message textarea:focus,
+.form-fields select:focus {
+  color: #333;
+  border: 1px solid #C17CCF;
+  outline: none;
+  background: #f2f2f2;
+}
+.form-message textarea {
+    display: block;
+    box-sizing: border-box;
+    font: 0.9em 'Roboto', sans-serif;
+    width: 90%;
+    height: 6em;
+    overflow: auto;
+    padding: 0.6em 0.8em;
+    color: #999;
+    background: #f7f7f7;
+    border: 1px solid #e1e1e1;
+    line-height: normal;
+}
+.submit-btn {
+	border-radius: 0px 2px 2px 0px;
+	box-sizing: content-box;
+	background: #212529;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: white;
+	padding: 0.35em 0.75em;
+	border: none;
+	font-size: 1.1em;
+	text-decoration: none;
+	cursor: pointer;
+}
+.submit-btn:hover, .submit-btn:focus {
+	background: #3DBA91;
+}
+
+/* CONTACT FORM FLEX CODE
+_______________________________________ */
+.register-form {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -2em;
+}
+.form-group {
+	flex: 1 0 300px;
+}
+.form-submit {
+	flex: 0 0 100%;
+}
+.form-fields li {
+	display: flex;
+	flex-wrap: wrap;
+}
+.form-fields input[type="text"],
+.form-fields input[type="tel"],
+.form-fields input[type="url"],
+.form-fields input[type="email"],
+.form-fields input[type="number"],
+.form-fields select {
+	flex: 1 0 230px;
+}
+.form-fields label {
+	flex: 1 0 90px;
+	max-width: 200px;
+}
+
+
+
+/* CONTACT INFO / SOCIAL MEDIA
+_______________________________________ */
+footer {
+  background: #333333;
+  color: #F7FFF7;
+}
+
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+}
+.contact-list a {
+  text-decoration: none;
+  padding: 15px;
+  display: inline-block;
+}
+
+.right-footer {
+ margin-left: auto;
+}
+
+/* Responsive
+_______________________________________ */
+@media screen and (min-width:750px){
+  header, footer {
+    text-align: center;
+  }
+  .project-item img {
+    float: left;
+    margin-right: 20px;
+  }
+
+  .contact-list {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width:749px){
+  h1 {
+    font-size: 75px;
+    line-height: 0.9;
+    margin-bottom: 20px;
+  }
+  h2 {
+    line-height: 1;
+  }
+  .contact-list a {
+    padding: 5px;
+  }
+}
+
+
